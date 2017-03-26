@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="Tanvir M">
+        <meta property="og:site_name" content="">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="" />
+        <meta property="og:url" content="/institute/list/">
+
+        <!-- Icons -->
+        <link rel="stylesheet" type="text/css" href="static/fonts/font-awesome.min.css">
+        <!-- Main styles for this application -->
+        <link rel="stylesheet" type="text/css" href="static/css/style.min.css">
+
+        <!--Select 2-->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css">
+
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
+
+        <title></title>
+        <style>
+            table thead tr th {
+                text-align: center;
+                white-space: nowrap
+            }
+            
+            table tbody tr td {
+                text-align: center;
+                white-space: nowrap
+            }
+            
+            img {
+                max-height: 100%;
+                max-width: 100%
+            }
+            
+            input[type='number'] {
+                box-sizing: border-box
+            }
+            
+            .slick-prev:before,
+            .slick-next:before {
+                color: blue !important;
+            }
+        </style>
+    </head>
+    <title>ITSD coaching app</title>
+
+</head>
+
+<body class="navbar-fixed sidebar-nav fixed-nav">
+
+    <header class="navbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler mobile-toggler hidden-lg-up" type="button">☰</button>
+            <!--Logo goes here-->
+            <a class="navbar-brand" href="#"></a>
+            <ul class="nav navbar-nav hidden-md-down">
+                <li class="nav-item">
+                    <a class="nav-link navbar-toggler layout-toggler" href="#">☰</a>
+                </li>
+
+                <li class="nav-item px-1">
+                    <a class="nav-link" href="#">BSCL distribution system</a>
+                </li>
+                <li class="nav-item px-1">
+                    <span class="nav-link" id="todays-date"></span>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav float-xs-right hidden-md-down">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+
+                        <span class="hidden-md-down">admin</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Logout</a>
+                        <div class="dropdown-header text-xs-center">
+                            <strong>Settings</strong>
+                        </div>
+                        <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-wrench"></i> Settings</a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-usd"></i> Due Payments<span class="tag tag-default">42</span></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <nav class="sidebar-nav">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-dashboard"></i> Dashboard</a>
+                </li>
+
+                <li class="nav-title">
+                    Menu
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa fa-building"></i>Outlets</a>
+                </li>
+                <li class="divider"></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="main">
+
+        <!-- Breadcrumb -->
+        <ol class="breadcrumb">
+
+        </ol>
+
+        <div class="container-fluid">
+            <div class="animated fadeIn">
+
+                <div class="row">
+                    <div class="card">
+                        <div class="card-header">
+                            Sell producs
+                            <a class="btn btn-danger pull-right" href="#">Back</a>
+                        </div>
+                        <div class="card-block">
+                            <div class="form-group row">
+                                <label class="form-control-label col-md-2" for="sales-representatives">Sales representative</label>
+                                <div class="col-md-10">
+                                    <select class="form-control" id="sales-representatives">
+                                        <option value="1">Mahmudur Rahman</option>
+                                        <option value="2">Ashiqur Rahman</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--row-->
+
+                <div class="row">
+                    <div class="card">
+                        <div class="card-header">Chips</div>
+                        <div class="card-block">
+                            <div class="chips">
+                                <div>
+                                    <div class="col-md-12">
+                                        <div class="offset-md-2 col-md-8">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    Bombay Mix
+                                                </div>
+                                                <div class="card-block">
+                                                    <div class="row">
+                                                        <img src="static/img/bombaymix2.png">
+                                                    </div>
+                                                    <div class="row">
+
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <div class="col-sm-12">
+                                                        <input type="number" min="0" step="1" class="form-control" id="bombay-mix-quantity" value="0">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="col-md-12">
+                                        <div class="offset-md-2 col-md-8">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    Bombay Mix
+                                                </div>
+                                                <div class="card-block">
+                                                    <div class="row">
+                                                        <img src="static/img/bombaymix2.png">
+                                                    </div>
+                                                    <div class="row">
+
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <div class="col-sm-12">
+                                                        <input type="number" min="0" step="1" class="form-control" id="bombay-mix-quantity" value="0">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="col-md-12">
+                                        <div class="offset-md-2 col-md-8">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    Bombay Mix
+                                                </div>
+                                                <div class="card-block">
+                                                    <div class="row">
+                                                        <img src="static/img/bombaymix2.png">
+                                                    </div>
+                                                    <div class="row">
+
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <div class="col-sm-12">
+                                                        <input type="number" min="0" step="1" class="form-control" id="bombay-mix-quantity" value="0">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="col-md-12">
+                                        <div class="offset-md-2 col-md-8">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    Bombay Mix
+                                                </div>
+                                                <div class="card-block">
+                                                    <div class="row">
+                                                        <img src="static/img/bombaymix2.png">
+                                                    </div>
+                                                    <div class="row">
+
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <div class="col-sm-12">
+                                                        <input type="number" min="0" step="1" class="form-control" id="bombay-mix-quantity" value="0">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="col-md-12">
+                                        <div class="offset-md-2 col-md-8">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    Bombay Mix
+                                                </div>
+                                                <div class="card-block">
+                                                    <div class="row">
+                                                        <img src="static/img/bombaymix2.png">
+                                                    </div>
+                                                    <div class="row">
+
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <div class="col-sm-12">
+                                                        <input type="number" min="0" step="1" class="form-control" id="bombay-mix-quantity" value="0">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="col-md-12">
+                                        <div class="offset-md-2 col-md-8">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    Bombay Mix
+                                                </div>
+                                                <div class="card-block">
+                                                    <div class="row">
+                                                        <img src="static/img/bombaymix2.png">
+                                                    </div>
+                                                    <div class="row">
+
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <div class="col-sm-12">
+                                                        <input type="number" min="0" step="1" class="form-control" id="bombay-mix-quantity" value="0">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="col-md-12">
+                                        <div class="offset-md-2 col-md-8">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    Bombay Mix
+                                                </div>
+                                                <div class="card-block">
+                                                    <div class="row">
+                                                        <img src="static/img/bombaymix2.png">
+                                                    </div>
+                                                    <div class="row">
+
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <div class="col-sm-12">
+                                                        <input type="number" min="0" step="1" class="form-control" id="bombay-mix-quantity" value="0">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="col-md-12">
+                                        <div class="offset-md-2 col-md-8">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    Bombay Mix
+                                                </div>
+                                                <div class="card-block">
+                                                    <div class="row">
+                                                        <img src="static/img/bombaymix2.png">
+                                                    </div>
+                                                    <div class="row">
+
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <div class="col-sm-12">
+                                                        <input type="number" min="0" step="1" class="form-control" id="bombay-mix-quantity" value="0">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="col-md-12">
+                                        <div class="offset-md-2 col-md-8">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    Bombay Mix
+                                                </div>
+                                                <div class="card-block">
+                                                    <div class="row">
+                                                        <img src="static/img/bombaymix2.png">
+                                                    </div>
+                                                    <div class="row">
+
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <div class="col-sm-12">
+                                                        <input type="number" min="0" step="1" class="form-control" id="bombay-mix-quantity" value="0">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Col-md-12-->
+                        </div>
+                        <!--Card-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.conainer-fluid -->
+    </main>
+
+    <footer class="footer">
+        <span class="text-left">
+            <a href="#">ITSD</a> © 2017.
+        </span>
+        <span class="float-xs-right">
+            Powered by <a href="#">ITSD</a>
+        </span>
+    </footer>
+
+    <!-- Bootstrap and necessary plugins -->
+    <script src="static/js/libs/jquery.min.js"></script>
+    <script src="static/js/libs/tether.min.js"></script>
+    <script src="static/js/libs/bootstrap.min.js"></script>
+    <script src="static/js/libs/pace.min.js"></script>
+
+    <!-- Plugins and scripts required by all views -->
+
+    <!-- GenesisUI main scripts -->
+
+    <!-- Plugins and scripts required by this views -->
+    <!--Select 2-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+
+    <!--Jquery migrate-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.0/jquery-migrate.min.js"></script>
+
+    <!--Slick-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+
+    <!-- Custom scripts required by this view -->
+
+    <script src="static/js/main.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // Applying select 2 
+            $("select#sales-representatives").select2();
+            // Apply slick-carousal
+            $('.chips').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrow: false
+            });
+        });
+    </script>
+
+</body>
+
+</html>
